@@ -5,7 +5,7 @@ int main() {
     int soma = 0;
 
     for(int i = 0; i < 5; i++) {
-        printf("Digite um numero: ");
+        printf("Digite o %d numero: ", i + 1);
         scanf("%d", &numeros[i]);
 
         soma += numeros[i];
