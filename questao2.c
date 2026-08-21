@@ -4,8 +4,13 @@ int main() {
     int n;
     long long fatorial = 1;
 
-    printf("Digite um numero: ");
+    printf("Digite um numero inteiro: ");
     scanf("%d", &n);
+
+    if(n < 0) {
+        printf("Numero invalido!\n");
+        return 1;
+    }
 
     for(int i = 1; i <= n; i++) {
         fatorial *= i;
